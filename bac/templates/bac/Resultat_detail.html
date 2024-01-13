@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Resultat Details</title>{% endblock %}
+{% block content %}
+    <h1 class="text-center">Information sur les Resultat</h1>
+    <ul class="list-group p-5">
+        <li class="list-group-item"><b>Examen</b>: {{ resultat.examen.code }}</li>
+        <li class="list-group-item"><b>Candidat</b>: {{ resultat.candidat.num_dossier }}</li>
+        <li class="list-group-item"><b>Moyenne</b>: {{ resultat.moyenne }}</li>
+        <li class="list-group-item"><b>Decision</b>: {{ resultat.decision }}</li>
+        
+    </ul>
+    <p class="text-center"><a href="/Resultat/" class="get-started-btn scrollto" style="text-decoration:none">Back To List of Resultats</a></p>
+{% endblock %}

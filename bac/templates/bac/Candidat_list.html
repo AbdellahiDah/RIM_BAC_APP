@@ -1,0 +1,47 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+  <title>Candidat</title>
+{% endblock %}
+{% block content %}
+<br><br>
+<div class="text-end"> <a href="/Candidat/add" class="get-started-btn scrollto" style="text-decoration:none">Add Candidat</a></div>
+<h1><b>Liste des Candidats</b></h1><br><br>
+{% if candidat_list %}
+<div class="table-responsive text-nowrap">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">id</th>  
+        <th scope="col">num_dossier</th>  
+        <th scope="col">annee</th>
+        <th scope="col">nom</th>
+        <th scope="col">prenom</th>
+        <th scope="col">date_naissance</th>
+        <th scope="col">etablissement</th>
+        <th scope="col">centre_exam</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for w in candidat_list %}
+      <tr>
+        <th scope="row">{{ w.id }}</th>
+        <td>{{ w.num_dossier }}</td>
+        <td>{{ w.annee }}</td>
+        <td>{{ w.nom }}</td>
+        <td>{{ w.prenom }}</td>
+        <td>{{ w.date_naissance }}</td>
+        <td>{{ w.etablissement.code }}</td>
+        <td>{{ w.centre_exam.code }}</td>
+        <td><a href="/Candidat/{{ w.id }}" class="btn btn-info">View</a> | <a href="/Candidat/update/{{ w.id }}" class="btn btn-primary">Edit</a> | <a href="/Candidat/delete/{{ w.id }}" class="btn btn-danger">Delete</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  
+</table>
+</div>
+{% else %}
+  <p>There are no Candidats in the database.</p>
+{% endif %}
+{% endblock %}

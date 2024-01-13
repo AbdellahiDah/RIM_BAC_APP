@@ -1,0 +1,25 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Results</title>{% endblock %}
+{% block content %}
+<br><br><br>
+<h1> <b>Trouvez votre resultat</b></h1>
+
+<center>
+        <form action="/findresutls" method="post">
+                {% csrf_token %}
+                <br><br>
+                <label for="fname">Annee:</label>
+                <input list="browsers" class="form-control" style="width: 50%;" placeholder="Entrer l'annee BAC">
+                <datalist id="browsers" style="width: 100%;">
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="20 17">2017</option>
+                </datalist>
+                <label for="num_dos">numero de dossier:</label>
+                <input id="num_dos" class="form-control" type="number" name="num_dos" style="width: 50%;" placeholder="Entrer votre numréo de dossier"/><br>
+                <input type="submit" class="get-started-btn scrollto" value="Find">
+                </form>
+</center>
+{% endblock %}  
+

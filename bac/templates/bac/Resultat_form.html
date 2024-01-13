@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Resultat Edit</title>{% endblock %}
+{% block content %}
+<br><br>
+<h1> <b>Ajouter une Résultat</b></h1>
+<form action="" method="post" class="text-center p-5">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit" class="get-started-btn scrollto" value="Save" />
+</form>
+<p class="text-center"><a href="/Resultat/" class="get-started-btn scrollto" style="text-decoration:none">Back To List of Resultats</a></p>
+{% endblock %}

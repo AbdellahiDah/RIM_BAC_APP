@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- #####################responsivite################################# -->
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="{% static 'dash.css' %}">
+<link rel="stylesheet" href="{% static 'dash_js.js' %}">
+
+</head>
+<body>
+<div id="Dashboard">
+	<div id="Group_433">
+		<div id="Group_432">
+			<div id="Group_431">
+				<div id="Group_430">
+					<div id="Group_429">
+						<svg class="Rectangle_1551">
+							<rect id="Rectangle_1551" rx="44" ry="44" x="0" y="0" width="233" height="312">
+							</rect>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<svg class="Path_367" viewBox="0 0 2062.337 118.132">
+		<path id="Path_367" d="M 0 0 L 1920 0 L 1920 118.1320114135742 C 1920 118.1320114135742 2299.384765625 116.6265182495117 1819.384887695312 116.6265182495117 C 1339.384887695312 116.6265182495117 0 118.1320114135742 0 118.1320114135742 L 0 0 Z">
+		</path>
+	</svg>
+	<svg class="Rectangle_3">
+		<rect id="Rectangle_3" rx="0" ry="0" x="0" y="0" width="236" height="961">
+		</rect>
+	</svg>
+	<svg class="Rectangle_12">
+		<rect id="Rectangle_12" rx="0" ry="0" x="0" y="0" width="236" height="1018">
+		</rect>
+	</svg>
+	<div id="Dashboard_w">
+		<span>Dashboard</span>
+	</div>
+	<div id="Classification">
+		<span>Classification</span>
+	</div>
+	<div id="Agregats">
+		<span>Agregats</span>
+	</div>
+	<div id="Prvision">
+		<span>Prévision</span>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Apps">
+		<div id="layers">
+			<svg class="Path_361" viewBox="2 2 35.596 14.312">
+				<path id="Path_361" d="M 19.79775238037109 2 L 2 9.15606689453125 L 19.79775238037109 16.3121337890625 L 37.59550476074219 9.15606689453125 L 19.79775238037109 2 Z">
+				</path>
+			</svg>
+			<svg class="Path_362" viewBox="2 17 35.596 7.156">
+				<path id="Path_362" d="M 2 17 L 19.79775238037109 24.15606689453125 L 37.59550476074219 17">
+				</path>
+			</svg>
+			<svg class="Path_363" viewBox="2 12 35.596 7.156">
+				<path id="Path_363" d="M 2 12 L 19.79775238037109 19.15606689453125 L 37.59550476074219 12">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<div id="Dashboard_">
+		<span>Dashboard</span>
+	</div>
+	<div id="Primary_Button" class="Primary_Button">
+		<div id="Mina" class="Mina">
+			<svg class="Rectangle_1">
+				<rect id="Rectangle_1" rx="38" ry="38" x="0" y="0" width="170" height="85">
+				</rect>
+			</svg>
+		</div>
+		<div id="Actualiser">
+			<span>Actualiser</span>
+		</div>
+	</div>
+	<div id="graph-line">
+		<svg class="Rectangle_22">
+			<rect id="Rectangle_22" rx="0" ry="0" x="0" y="0" width="32.727" height="41.951">
+			</rect>
+		</svg>
+		<div id="Group_21">
+			<div id="Group_20">
+				<svg class="Path_30" viewBox="7 5 30.694 14.851">
+					<path id="Path_30" d="M 7.000001430511475 19.85072135925293 L 16.59182929992676 12.42536163330078 L 26.18365478515625 13.66292190551758 L 37.69385528564453 4.999999523162842">
+					</path>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div id="analytics">
+		<svg class="Line_1" viewBox="0 0 3.5 14">
+			<path id="Line_1" d="M 0 14 L 0 0">
+			</path>
+		</svg>
+		<svg class="Line_2" viewBox="0 0 3.5 6">
+			<path id="Line_2" d="M 0 6 L 0 0">
+			</path>
+		</svg>
+		<svg class="Line_3" viewBox="0 0 3.5 14">
+			<path id="Line_3" d="M 0 14 L 0 0">
+			</path>
+		</svg>
+		<svg class="Line_4" viewBox="0 0 3.5 33">
+			<path id="Line_4" d="M 0 33 L 0 0">
+			</path>
+		</svg>
+	</div>
+	<div id="Group_37">
+		<div id="power-level">
+			<div id="Group_38">
+				<svg class="Path_2" viewBox="0.77 0.494 32.727 13.638">
+					<path id="Path_2" d="M 0.7699999213218689 14.13266372680664 C 2.800579071044922 6.075501441955566 9.497061729431152 0.4942628741264343 17.13362312316895 0.4942653179168701 C 24.77017593383789 0.4942653179168701 31.46665954589844 6.075506210327148 33.49723052978516 14.13266563415527">
+					</path>
+				</svg>
+				<svg class="Path_3" viewBox="5.458 5.824 18.539 25.226">
+					<path id="Path_3" d="M 6.004647254943848 26.4116325378418 C 4.409008026123047 22.66937637329102 6.817173004150391 5.824000358581543 6.817173004150391 5.824000358581543 C 6.817173004150391 5.824000358581543 22.13015365600586 19.20074844360352 23.60078811645508 22.64591979980469 C 25.07088851928711 26.09009170532227 22.3236083984375 29.72688293457031 17.46456527709961 30.76891326904297 C 12.60552883148193 31.81094360351562 7.474747657775879 29.86362457275391 6.004647254943848 26.41944885253906 Z">
+					</path>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div id="Repeat_Grid_1">
+		<div id="Group" class="">
+			<svg class="Line_11" viewBox="0 0 235 1">
+				<path id="Line_11" d="M 0 0 L 235 0">
+				</path>
+			</svg>
+		</div>
+		<div id="Group_bs" class="">
+			<svg class="Line_11_bt" viewBox="0 0 235 1">
+				<path id="Line_11_bt" d="M 0 0 L 235 0">
+				</path>
+			</svg>
+		</div>
+		<div id="Group_bu" class="">
+			<svg class="Line_11_bv" viewBox="0 0 235 1">
+				<path id="Line_11_bv" d="M 0 0 L 235 0">
+				</path>
+			</svg>
+		</div>
+		<div id="Group_bw" class="">
+			<svg class="Line_11_bx" viewBox="0 0 235 1">
+				<path id="Line_11_bx" d="M 0 0 L 235 0">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<svg class="Rectangle_1543">
+		<rect id="Rectangle_1543" rx="0" ry="0" x="0" y="0" width="235" height="118">
+		</rect>
+	</svg>
+	<div id="Menu__Close" class="Menu___Close">
+		<svg class="Line_1_b" viewBox="0 0 41 6">
+			<path id="Line_1_b" d="M 0 0 L 41 0">
+			</path>
+		</svg>
+		<svg class="Line_2_b" viewBox="0 0 41 6">
+			<path id="Line_2_b" d="M 0 0 L 41 0">
+			</path>
+		</svg>
+		<svg class="Line_3_b" viewBox="0 0 41 6">
+			<path id="Line_3_b" d="M 0 0 L 41 0">
+			</path>
+		</svg>
+	</div>
+	<div id="Group_40">
+		<div id="Group_39">
+			<div id="Group_2">
+				<svg class="Rectangle_2">
+					<rect id="Rectangle_2" rx="33.5" ry="33.5" x="0" y="0" width="173" height="67">
+					</rect>
+				</svg>
+			</div>
+			<div id="Delta">
+				<span>Delta</span>
+			</div>
+		</div>
+	</div>
+	<div id="Group_46">
+		<div id="Group_45">
+			<svg class="Rectangle_1548">
+				<rect id="Rectangle_1548" rx="57" ry="57" x="0" y="0" width="958" height="362">
+				</rect>
+			</svg>
+			<svg class="Base">
+				<rect id="Base" rx="22.241966247558594" ry="22.241966247558594" x="0" y="0" width="957.111" height="44.484">
+				</rect>
+			</svg>
+			<svg class="Base_cc">
+				<rect id="Base_cc" rx="0" ry="0" x="0" y="0" width="957.111" height="36.656">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	<div id="Sales_Report">
+		<svg class="Shape">
+			<rect id="Shape" rx="6" ry="6" x="0" y="0" width="956.18" height="374.328">
+			</rect>
+		</svg>
+		<div id="Value">
+			<div id="Chart_-_Left_Value" class="Chart___Left_Value">
+				<svg class="Shape_ch">
+					<rect id="Shape_ch" rx="0" ry="0" x="0" y="0" width="852.293" height="1.344">
+					</rect>
+				</svg>
+				<div id="n_k">
+					<span>0</span>
+				</div>
+			</div>
+			<div id="Chart_-_Left_Value_cj" class="Chart___Left_Value">
+				<svg class="Shape_ck">
+					<rect id="Shape_ck" rx="0" ry="0" x="0" y="0" width="852.293" height="1.344">
+					</rect>
+				</svg>
+				<div id="n_k_cl">
+					<span>$10k</span>
+				</div>
+			</div>
+			<div id="Chart_-_Left_Value_cm" class="Chart___Left_Value">
+				<svg class="Shape_cn">
+					<rect id="Shape_cn" rx="0" ry="0" x="0" y="0" width="852.293" height="1.344">
+					</rect>
+				</svg>
+				<div id="n_k_co">
+					<span>$20k</span>
+				</div>
+			</div>
+			<div id="Chart_-_Left_Value_cp" class="Chart___Left_Value">
+				<svg class="Shape_cq">
+					<rect id="Shape_cq" rx="0" ry="0" x="0" y="0" width="852.293" height="1.344">
+					</rect>
+				</svg>
+				<div id="n_k_cr">
+					<span>$30k</span>
+				</div>
+			</div>
+			<div id="Chart_-_Left_Value_cs" class="Chart___Left_Value">
+				<svg class="Shape_ct">
+					<rect id="Shape_ct" rx="0" ry="0" x="0" y="0" width="852.293" height="1.344">
+					</rect>
+				</svg>
+				<div id="n_k_cu">
+					<span>$40k</span>
+				</div>
+			</div>
+			<div id="Chart_-_Left_Value_cv" class="Chart___Left_Value">
+				<svg class="Shape_cw">
+					<rect id="Shape_cw" rx="0" ry="0" x="0" y="0" width="852.293" height="1.344">
+					</rect>
+				</svg>
+				<div id="n_k_cx">
+					<span>$50k</span>
+				</div>
+			</div>
+			<div id="Chart_-_Left_Value_cy" class="Chart___Left_Value">
+				<svg class="Shape_cz">
+					<rect id="Shape_cz" rx="0" ry="0" x="0" y="0" width="852.293" height="1.344">
+					</rect>
+				</svg>
+				<div id="n_k_c">
+					<span>$60k</span>
+				</div>
+			</div>
+			<div id="Chart_-_Left_Value_c" class="Chart___Left_Value">
+				<svg class="Shape_c">
+					<rect id="Shape_c" rx="0" ry="0" x="0" y="0" width="852.293" height="1.344">
+					</rect>
+				</svg>
+				<div id="n_k_da">
+					<span>$70k</span>
+				</div>
+			</div>
+			<div id="Chart_-_Left_Value_da" class="Chart___Left_Value">
+				<svg class="Shape_da">
+					<rect id="Shape_da" rx="0" ry="0" x="0" y="0" width="852.293" height="1.344">
+					</rect>
+				</svg>
+				<div id="n_k_db">
+					<span>$80k</span>
+				</div>
+			</div>
+		</div>
+		<div id="legend">
+			<div id="Income" class="Income">
+				<svg class="Shape_db">
+					<rect id="Shape_db" rx="5" ry="5" x="0" y="0" width="10" height="10">
+					</rect>
+				</svg>
+				<div id="Marketing_Sales">
+					<span>Income</span>
+				</div>
+			</div>
+			<div id="Online" class="Online">
+				<svg class="Shape_dc">
+					<rect id="Shape_dc" rx="5" ry="5" x="0" y="0" width="10" height="10">
+					</rect>
+				</svg>
+				<div id="Marketing_Sales_dd">
+					<span>Expense</span>
+				</div>
+			</div>
+		</div>
+		<div id="Sales_Report_de">
+			<span>Raport des depenses</span>
+		</div>
+		<div id="Scroll_Group">
+			<div id="Bar_Graph">
+				<div id="Group_dh" class="">
+					<div id="Widgets___Elements__Chart__Gra" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month">
+							<span>Jan 19</span>
+						</div>
+						<div id="Bars">
+							<svg class="Blue_Bar">
+								<rect id="Blue_Bar" rx="4" ry="4" x="0" y="0" width="8" height="134">
+								</rect>
+							</svg>
+							<svg class="Green_Bar">
+								<rect id="Green_Bar" rx="4" ry="4" x="0" y="0" width="8" height="146">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_dn" class="">
+					<div id="Widgets___Elements__Chart__Gra_do" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_dp">
+							<span>Feb 19</span>
+						</div>
+						<div id="Bars_dq">
+							<svg class="Blue_Bar_dr">
+								<rect id="Blue_Bar_dr" rx="4" ry="4" x="0" y="0" width="8" height="95">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_ds">
+								<rect id="Green_Bar_ds" rx="4" ry="4" x="0" y="0" width="8" height="55">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_dt" class="">
+					<div id="Widgets___Elements__Chart__Gra_du" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_dv">
+							<span>Mar 19</span>
+						</div>
+						<div id="Bars_dw">
+							<svg class="Blue_Bar_dx">
+								<rect id="Blue_Bar_dx" rx="4" ry="4" x="0" y="0" width="8" height="219">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_dy">
+								<rect id="Green_Bar_dy" rx="4" ry="4" x="0" y="0" width="8" height="191">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_dz" class="">
+					<div id="Widgets___Elements__Chart__Gra_d" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_d">
+							<span>Apr 19</span>
+						</div>
+						<div id="Bars_d">
+							<svg class="Blue_Bar_d">
+								<rect id="Blue_Bar_d" rx="4" ry="4" x="0" y="0" width="8" height="137">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_d">
+								<rect id="Green_Bar_d" rx="4" ry="4" x="0" y="0" width="8" height="85">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_d" class="">
+					<div id="Widgets___Elements__Chart__Gra_ea" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_ea">
+							<span>May 19</span>
+						</div>
+						<div id="Bars_ea">
+							<svg class="Blue_Bar_ea">
+								<rect id="Blue_Bar_ea" rx="4" ry="4" x="0" y="0" width="8" height="113">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_ea">
+								<rect id="Green_Bar_ea" rx="4" ry="4" x="0" y="0" width="8" height="43">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_eb" class="">
+					<div id="Widgets___Elements__Chart__Gra_ec" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_ed">
+							<span>Jun 19</span>
+						</div>
+						<div id="Bars_ee">
+							<svg class="Blue_Bar_ef">
+								<rect id="Blue_Bar_ef" rx="4" ry="4" x="0" y="0" width="8" height="181">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_eg">
+								<rect id="Green_Bar_eg" rx="4" ry="4" x="0" y="0" width="8" height="65">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_eh" class="">
+					<div id="Widgets___Elements__Chart__Gra_ei" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_ej">
+							<span>Jul 19</span>
+						</div>
+						<div id="Bars_ek">
+							<svg class="Blue_Bar_el">
+								<rect id="Blue_Bar_el" rx="4" ry="4" x="0" y="0" width="8" height="39">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_em">
+								<rect id="Green_Bar_em" rx="4" ry="4" x="0" y="0" width="8" height="191">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_en" viewBox="0 0 8 127.408">
+								<path id="Green_Bar_en" d="M 4 0 C 6.209138870239258 0 8 1.194603562355042 8 2.668221950531006 L 8 127.407600402832 L 0 127.407600402832 L 0 2.668221950531006 C 0 1.194603562355042 1.790860891342163 0 4 0 Z">
+								</path>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_eo" class="">
+					<div id="Widgets___Elements__Chart__Gra_ep" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_eq">
+							<span>Aug 19</span>
+						</div>
+						<div id="Bars_er">
+							<svg class="Blue_Bar_es">
+								<rect id="Blue_Bar_es" rx="4" ry="4" x="0" y="0" width="8" height="115">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_et">
+								<rect id="Green_Bar_et" rx="4" ry="4" x="0" y="0" width="8" height="133">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_eu" class="">
+					<div id="Widgets___Elements__Chart__Gra_ev" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_ew">
+							<span>Sep 19</span>
+						</div>
+						<div id="Bars_ex">
+							<svg class="Blue_Bar_ey">
+								<rect id="Blue_Bar_ey" rx="4" ry="4" x="0" y="0" width="8" height="63">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_ez">
+								<rect id="Green_Bar_ez" rx="4" ry="4" x="0" y="0" width="8" height="199">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_e" class="">
+					<div id="Widgets___Elements__Chart__Gra_e" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_e">
+							<span>Oct 19</span>
+						</div>
+						<div id="Bars_e">
+							<svg class="Blue_Bar_e">
+								<rect id="Blue_Bar_e" rx="4" ry="4" x="0" y="0" width="8" height="92">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_e">
+								<rect id="Green_Bar_e" rx="4" ry="4" x="0" y="0" width="8" height="99">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_fa" class="">
+					<div id="Widgets___Elements__Chart__Gra_fa" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_fa">
+							<span>Nov 19</span>
+						</div>
+						<div id="Bars_fa">
+							<svg class="Blue_Bar_fa">
+								<rect id="Blue_Bar_fa" rx="4" ry="4" x="0" y="0" width="8" height="79">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_fb">
+								<rect id="Green_Bar_fb" rx="4" ry="4" x="0" y="0" width="8" height="104">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_fc" class="">
+					<div id="Widgets___Elements__Chart__Gra_fd" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_fe">
+							<span>Dec 19</span>
+						</div>
+						<div id="Bars_ff">
+							<svg class="Blue_Bar_fg">
+								<rect id="Blue_Bar_fg" rx="4" ry="4" x="0" y="0" width="8" height="85">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_fh">
+								<rect id="Green_Bar_fh" rx="4" ry="4" x="0" y="0" width="8" height="40">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_fi" class="">
+					<div id="Widgets___Elements__Chart__Gra_fj" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_fk">
+							<span>Jan 20</span>
+						</div>
+						<div id="Bars_fl">
+							<svg class="Blue_Bar_fm">
+								<rect id="Blue_Bar_fm" rx="4" ry="4" x="0" y="0" width="8" height="51">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_fn">
+								<rect id="Green_Bar_fn" rx="4" ry="4" x="0" y="0" width="8" height="140">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_fo" class="">
+					<div id="Widgets___Elements__Chart__Gra_fp" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_fq">
+							<span>Feb 20</span>
+						</div>
+						<div id="Bars_fr">
+							<svg class="Blue_Bar_fs">
+								<rect id="Blue_Bar_fs" rx="4" ry="4" x="0" y="0" width="8" height="116">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_ft">
+								<rect id="Green_Bar_ft" rx="4" ry="4" x="0" y="0" width="8" height="149">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_fu" class="">
+					<div id="Widgets___Elements__Chart__Gra_fv" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_fw">
+							<span>Mar 20</span>
+						</div>
+						<div id="Bars_fx">
+							<svg class="Blue_Bar_fy">
+								<rect id="Blue_Bar_fy" rx="4" ry="4" x="0" y="0" width="8" height="163">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_fz">
+								<rect id="Green_Bar_fz" rx="4" ry="4" x="0" y="0" width="8" height="218">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_f" class="">
+					<div id="Widgets___Elements__Chart__Gra_f" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_f">
+							<span>Apr 20</span>
+						</div>
+						<div id="Bars_f">
+							<svg class="Blue_Bar_f">
+								<rect id="Blue_Bar_f" rx="4" ry="4" x="0" y="0" width="8" height="123">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_f">
+								<rect id="Green_Bar_f" rx="4" ry="4" x="0" y="0" width="8" height="54">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_ga" class="">
+					<div id="Widgets___Elements__Chart__Gra_ga" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_ga">
+							<span>May 20</span>
+						</div>
+						<div id="Bars_ga">
+							<svg class="Blue_Bar_ga">
+								<rect id="Blue_Bar_ga" rx="4" ry="4" x="0" y="0" width="8" height="180">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_gb">
+								<rect id="Green_Bar_gb" rx="4" ry="4" x="0" y="0" width="8" height="40">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_gc" class="">
+					<div id="Widgets___Elements__Chart__Gra_gd" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_ge">
+							<span>Jun 20</span>
+						</div>
+						<div id="Bars_gf">
+							<svg class="Blue_Bar_gg">
+								<rect id="Blue_Bar_gg" rx="4" ry="4" x="0" y="0" width="8" height="104">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_gh">
+								<rect id="Green_Bar_gh" rx="4" ry="4" x="0" y="0" width="8" height="137">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_gi" class="">
+					<div id="Widgets___Elements__Chart__Gra_gj" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_gk">
+							<span>Jul 20</span>
+						</div>
+						<div id="Bars_gl">
+							<svg class="Blue_Bar_gm">
+								<rect id="Blue_Bar_gm" rx="4" ry="4" x="0" y="0" width="8" height="146">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_gn">
+								<rect id="Green_Bar_gn" rx="4" ry="4" x="0" y="0" width="8" height="103">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_go" class="">
+					<div id="Widgets___Elements__Chart__Gra_gp" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_gq">
+							<span>Aug 20</span>
+						</div>
+						<div id="Bars_gr">
+							<svg class="Blue_Bar_gs">
+								<rect id="Blue_Bar_gs" rx="4" ry="4" x="0" y="0" width="8" height="183">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_gt">
+								<rect id="Green_Bar_gt" rx="4" ry="4" x="0" y="0" width="8" height="138">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_gu" class="">
+					<div id="Widgets___Elements__Chart__Gra_gv" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_gw">
+							<span>Sep 20</span>
+						</div>
+						<div id="Bars_gx">
+							<svg class="Blue_Bar_gy">
+								<rect id="Blue_Bar_gy" rx="4" ry="4" x="0" y="0" width="8" height="140">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_gz">
+								<rect id="Green_Bar_gz" rx="4" ry="4" x="0" y="0" width="8" height="70">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_g" class="">
+					<div id="Widgets___Elements__Chart__Gra_g" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_g">
+							<span>Oct 20</span>
+						</div>
+						<div id="Bars_g">
+							<svg class="Blue_Bar_g">
+								<rect id="Blue_Bar_g" rx="4" ry="4" x="0" y="0" width="8" height="111">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_g">
+								<rect id="Green_Bar_g" rx="4" ry="4" x="0" y="0" width="8" height="191">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_ha" class="">
+					<div id="Widgets___Elements__Chart__Gra_ha" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_ha">
+							<span>Nov 20</span>
+						</div>
+						<div id="Bars_ha">
+							<svg class="Blue_Bar_ha">
+								<rect id="Blue_Bar_ha" rx="4" ry="4" x="0" y="0" width="8" height="34">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_hb">
+								<rect id="Green_Bar_hb" rx="4" ry="4" x="0" y="0" width="8" height="70">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Group_hc" class="">
+					<div id="Widgets___Elements__Chart__Gra_hd" class="Widgets____Elements___Chart___Graph___Double_Bar">
+						<div id="Month_he">
+							<span>Dec 20</span>
+						</div>
+						<div id="Bars_hf">
+							<svg class="Blue_Bar_hg">
+								<rect id="Blue_Bar_hg" rx="4" ry="4" x="0" y="0" width="8" height="154">
+								</rect>
+							</svg>
+							<svg class="Green_Bar_hh">
+								<rect id="Green_Bar_hh" rx="4" ry="4" x="0" y="0" width="8" height="121">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Tooltip__Pointer_down" class="Tooltip___Pointer_down">
+				<div id="TooltipBG">
+					<svg class="BG" viewBox="0 0 119 88">
+						<path id="BG" d="M 53.5004997253418 81.99990081787109 L 3.90149998664856 81.99990081787109 C 1.746900081634521 81.99990081787109 0 79.37730407714844 0 76.1427001953125 L 0 5.857200145721436 C 0 2.622600078582764 1.746900081634521 0 3.90149998664856 0 L 115.0983047485352 0 C 117.2537994384766 0 118.9998016357422 2.622600078582764 118.9998016357422 5.857200145721436 L 118.9998016357422 76.1427001953125 C 118.9998016357422 79.37730407714844 117.2537994384766 81.99990081787109 115.0983047485352 81.99990081787109 L 65.50019836425781 81.99990081787109 L 59.49990081787109 88.00019836425781 L 53.5004997253418 81.99990081787109 Z">
+						</path>
+					</svg>
+				</div>
+				<div id="Data_Key">
+					<div id="Data">
+						<div id="Online_Sales">
+							<span>Expense</span>
+						</div>
+						<div id="n_50">
+							<span>$38k</span>
+						</div>
+						<svg class="Sales">
+							<rect id="Sales" rx="4" ry="4" x="0" y="0" width="8" height="8">
+							</rect>
+						</svg>
+					</div>
+					<div id="Data_hq">
+						<div id="Online_Sales_hr">
+							<span>Income</span>
+						</div>
+						<div id="n_50_hs">
+							<span>$49k</span>
+						</div>
+						<svg class="Sales_ht">
+							<rect id="Sales_ht" rx="4" ry="4" x="0" y="0" width="8" height="8">
+							</rect>
+						</svg>
+					</div>
+				</div>
+				<div id="Titlee">
+					<span>August 2020</span>
+				</div>
+			</div>
+		</div>
+		<div id="Buttons__Btn_text_icon" class="Buttons___Btn_text_icon">
+			<svg class="Type">
+				<rect id="Type" rx="4" ry="4" x="0" y="0" width="99" height="36">
+				</rect>
+			</svg>
+			<div id="Download_Button">
+				<div id="Text">
+					<span>Export</span>
+				</div>
+				<div id="Icons__Navigation_icon_12_stat" class="Icons___Navigation_icon__12_states_">
+					<div id="ic-file-download">
+						<svg class="Path_437" viewBox="0 0 24 24">
+							<path id="Path_437" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+							</path>
+						</svg>
+						<svg class="Path_438" viewBox="14 3 5 5">
+							<path id="Path_438" d="M 14 3 L 14 7 C 14 7.552284717559814 14.44771480560303 8 15 8 L 19 8">
+							</path>
+						</svg>
+						<svg class="Path_439" viewBox="5 3 14 18">
+							<path id="Path_439" d="M 17 21 L 7 21 C 5.895430564880371 21 5 20.10457038879395 5 19 L 5 5 C 5 3.895430564880371 5.895430564880371 2.999999761581421 7.000000476837158 3 L 14 3 L 19 8 L 19 19 C 19 20.10457038879395 18.10456848144531 21 17 21 Z">
+							</path>
+						</svg>
+						<svg class="Line_29" viewBox="0 0 2 6">
+							<path id="Line_29" d="M 0 0 L 0 6">
+							</path>
+						</svg>
+						<svg class="Path_440" viewBox="9 14 6 3">
+							<path id="Path_440" d="M 9 14 L 12 17 L 15 14">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="SortFilter">
+		<div id="Date">
+			<div id="Buttons__Btn_text_icon_h" class="Buttons___Btn_text_icon">
+				<svg class="Type_h">
+					<rect id="Type_h" rx="4" ry="4" x="0" y="0" width="199" height="36">
+					</rect>
+				</svg>
+				<div id="Group_393">
+					<div id="Text_ib">
+						<span>Jan, 2019 - Dec, 2019</span>
+					</div>
+					<div id="Icons__Navigation_icon_12_stat_ic" class="Icons___Navigation_icon__12_states_">
+						<div id="ic-calendar">
+							<svg class="Path_445" viewBox="0 0 24 24">
+								<path id="Path_445" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+								</path>
+							</svg>
+							<svg class="Rectangle_608">
+								<rect id="Rectangle_608" rx="2" ry="2" x="0" y="0" width="16" height="16">
+								</rect>
+							</svg>
+							<svg class="Line_31" viewBox="0 0 2 4">
+								<path id="Line_31" d="M 0 0 L 0 4">
+								</path>
+							</svg>
+							<svg class="Line_32" viewBox="0 0 2 4">
+								<path id="Line_32" d="M 0 0 L 0 4">
+								</path>
+							</svg>
+							<svg class="Line_33" viewBox="0 0 16 2">
+								<path id="Line_33" d="M 0 0 L 16 0">
+								</path>
+							</svg>
+							<svg class="Rectangle_609">
+								<rect id="Rectangle_609" rx="0" ry="0" x="0" y="0" width="2" height="2">
+								</rect>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="TABS">
+		<div id="Title">
+			<span>Paramétres</span>
+		</div>
+		<div id="Tab__Tab_Group">
+			<svg class="BG_in">
+				<rect id="BG_in" rx="4" ry="4" x="0" y="0" width="183" height="36">
+				</rect>
+			</svg>
+			<div id="Tabs">
+				<div id="Tab_Group___Elements__Regular_" class="Tab_Group____Elements___Regular_Tab__2_states_">
+					<svg class="BG_iq">
+						<rect id="BG_iq" rx="4" ry="4" x="0" y="0" width="51" height="34">
+						</rect>
+					</svg>
+					<div id="Name">
+						<span>Mois</span>
+					</div>
+				</div>
+				<div id="Tab_Group___Elements__Regular__is" class="Tab_Group____Elements___Regular_Tab__2_states_">
+					<svg class="BG_it">
+						<rect id="BG_it" rx="4" ry="4" x="0" y="0" width="75" height="34">
+						</rect>
+					</svg>
+					<div id="Name_iu">
+						<span>Semaine</span>
+					</div>
+				</div>
+				<div id="Tab_Group___Elements__Regular__iv" class="Tab_Group____Elements___Regular_Tab__2_states_">
+					<svg class="BG_iw">
+						<rect id="BG_iw" rx="4" ry="4" x="0" y="0" width="53" height="34">
+						</rect>
+					</svg>
+					<div id="Name_ix">
+						<span>Jours</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="Sidebar__Menu_item" class="Sidebar___Menu_item">
+		<svg class="Frame">
+			<rect id="Frame" rx="0" ry="0" x="0" y="0" width="230" height="52">
+			</rect>
+		</svg>
+		<svg class="Frame_i">
+			<rect id="Frame_i" rx="0" ry="0" x="0" y="0" width="230" height="52">
+			</rect>
+		</svg>
+		<div id="Name_i">
+			<span>Methode Pm</span>
+		</div>
+		<svg class="Line">
+			<rect id="Line" rx="2" ry="2" x="0" y="0" width="4" height="52">
+			</rect>
+		</svg>
+		<div id="Icons__Navigation_icon_12_stat_i" class="Icons___Navigation_icon__12_states_">
+			<div id="ic_home">
+				<svg class="Path_372" viewBox="0 0 24 24">
+					<path id="Path_372" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="Path_373" viewBox="3 3 18 9">
+					<path id="Path_373" d="M 5 12 L 3 12 L 12 3 L 21 12 L 19 12">
+					</path>
+				</svg>
+				<svg class="Path_374" viewBox="5 12 14 9">
+					<path id="Path_374" d="M 5 12 L 5 19 C 5 20.10456848144531 5.895430564880371 21 6.999999523162842 21 L 17 21 C 18.10457038879395 21 19 20.10456848144531 19 19 L 19 12">
+					</path>
+				</svg>
+				<svg class="Path_375" viewBox="9 13 6 8">
+					<path id="Path_375" d="M 9 21 L 9 15 C 9 13.89543056488037 9.895430564880371 13 11 13 L 13 13 C 14.10456943511963 13 15 13.89543056488037 15 15 L 15 21">
+					</path>
+				</svg>
+			</div>
+			<div id="ic_dashboard">
+				<div id="home">
+					<svg class="Path_372_jb" viewBox="0 0 24 24">
+						<path id="Path_372_jb" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+						</path>
+					</svg>
+				</div>
+				<svg class="Shape_jc" viewBox="0 0 20 20">
+					<path id="Shape_jc" d="M 13.00050067901611 19.99979972839355 L 7.000200271606445 19.99979972839355 L 0.9999000430107117 19.99979972839355 C 0.4482000172138214 19.99979972839355 0 19.55160140991211 0 18.99990081787109 L 0 6.499800205230713 C 0 5.397300243377686 0.8973000049591064 4.5 1.999800086021423 4.5 L 6.00029993057251 4.5 L 6.00029993057251 1.999800086021423 C 6.00029993057251 0.8973000049591064 6.896700382232666 0 8.000100135803223 0 L 12.00059986114502 0 C 13.10310077667236 0 14.00040054321289 0.8973000049591064 14.00040054321289 1.999800086021423 L 14.00040054321289 9 L 18 9 C 19.10340118408203 9 19.99979972839355 9.897299766540527 19.99979972839355 10.99980068206787 L 19.99979972839355 18.99990081787109 C 19.99979972839355 19.55160140991211 19.55160140991211 19.99979972839355 18.99990081787109 19.99979972839355 L 13.00050067901611 19.99979972839355 Z M 18 18 L 18 10.99980068206787 L 14.00040054321289 10.99980068206787 L 14.00040054321289 18 L 18 18 Z M 8.000100135803223 18 L 11.99970054626465 18 L 11.99970054626465 10.99980068206787 C 11.99970054626465 10.97994899749756 12.00002288818359 10.9601354598999 12.00059986114502 10.94042205810547 L 12.00059986114502 1.999800086021423 L 8.000100135803223 1.999800086021423 L 8.000100135803223 18 Z M 1.999800086021423 18 L 6.00029993057251 18 L 6.00029993057251 6.499800205230713 L 1.999800086021423 6.499800205230713 L 1.999800086021423 18 Z">
+					</path>
+				</svg>
+			</div>
+			<div id="ic_inbox">
+				<svg class="Path_376" viewBox="0 0 24 24">
+					<path id="Path_376" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="Rectangle_603">
+					<rect id="Rectangle_603" rx="2" ry="2" x="0" y="0" width="18" height="14">
+					</rect>
+				</svg>
+				<svg class="Path_377" viewBox="3 7 18 6">
+					<path id="Path_377" d="M 3 7 L 12 13 L 21 7">
+					</path>
+				</svg>
+			</div>
+			<div id="ic_invoice">
+				<svg class="Path_378" viewBox="0 0 24 24">
+					<path id="Path_378" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="Path_379" viewBox="14 3 5 5">
+					<path id="Path_379" d="M 14 3 L 14 7 C 14 7.552284717559814 14.44771480560303 8 15 8 L 19 8">
+					</path>
+				</svg>
+				<svg class="Path_380" viewBox="5 3 14 18">
+					<path id="Path_380" d="M 17 21 L 7 21 C 5.895430564880371 21 5 20.10457038879395 5 19 L 5 5 C 5 3.895430564880371 5.895430564880371 2.999999761581421 7.000000476837158 3 L 14 3 L 19 8 L 19 19 C 19 20.10457038879395 18.10456848144531 21 17 21 Z">
+					</path>
+				</svg>
+				<svg class="Line_12" viewBox="0 0 1 2">
+					<path id="Line_12" d="M 0 0 L 1 0">
+					</path>
+				</svg>
+				<svg class="Line_13" viewBox="0 0 6 2">
+					<path id="Line_13" d="M 0 0 L 6 0">
+					</path>
+				</svg>
+				<svg class="Line_14" viewBox="0 0 2 2">
+					<path id="Line_14" d="M 0 0 L 2 0">
+					</path>
+				</svg>
+			</div>
+			<div id="ic_users">
+				<svg class="Path_393" viewBox="0 0 24 24">
+					<path id="Path_393" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="Ellipse_3">
+					<ellipse id="Ellipse_3" rx="4" ry="4" cx="4" cy="4">
+					</ellipse>
+				</svg>
+				<svg class="Path_394" viewBox="3 15 12 6">
+					<path id="Path_394" d="M 3 21 L 3 19 C 3 16.79086112976074 4.7908616065979 15 7.000000476837158 15 L 11 15 C 13.20913887023926 15 15 16.79086112976074 15 19 L 15 21">
+					</path>
+				</svg>
+				<svg class="Path_395" viewBox="16 3.13 3.008 7.75">
+					<path id="Path_395" d="M 16 3.130000114440918 C 17.7699146270752 3.583170413970947 19.00784301757812 5.17799186706543 19.00784301757812 7.005000591278076 C 19.00784301757812 8.832008361816406 17.7699146270752 10.42683029174805 16 10.88000011444092">
+					</path>
+				</svg>
+				<svg class="Path_396" viewBox="18 15.15 3 5.85">
+					<path id="Path_396" d="M 21 21 L 21 19 C 20.98956108093262 17.1845703125 19.7578182220459 15.60383415222168 18 15.14999961853027">
+					</path>
+				</svg>
+			</div>
+			<div id="ic_message">
+				<svg class="Path_381" viewBox="0 0 24 24">
+					<path id="Path_381" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="Path_382" viewBox="3 3.979 18.014 16.021">
+					<path id="Path_382" d="M 3 20 L 4.300000190734863 16.10000038146973 C 1.976118087768555 12.663010597229 2.873875617980957 8.227706909179688 6.399766445159912 5.726273536682129 C 9.925655364990234 3.224841117858887 14.99022483825684 3.43018627166748 18.24528312683105 6.206557273864746 C 21.50033950805664 8.982928276062012 21.94011688232422 13.47246265411377 19.27387237548828 16.70712471008301 C 16.60762977600098 19.94178771972656 11.65920162200928 20.9221076965332 7.700000762939453 18.99999809265137 L 3.000000476837158 20">
+					</path>
+				</svg>
+				<svg class="Line_15" viewBox="0 0 2 0.01">
+					<path id="Line_15" d="M 0 0 L 0 0.009999999776482582">
+					</path>
+				</svg>
+				<svg class="Line_16" viewBox="0 0 2 0.01">
+					<path id="Line_16" d="M 0 0 L 0 0.009999999776482582">
+					</path>
+				</svg>
+				<svg class="Line_17" viewBox="0 0 2 0.01">
+					<path id="Line_17" d="M 0 0 L 0 0.009999999776482582">
+					</path>
+				</svg>
+			</div>
+			<div id="ic_calendar">
+				<svg class="Path_383" viewBox="0 0 24 24">
+					<path id="Path_383" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="Rectangle_604">
+					<rect id="Rectangle_604" rx="2" ry="2" x="0" y="0" width="16" height="16">
+					</rect>
+				</svg>
+				<svg class="Line_18" viewBox="0 0 2 4">
+					<path id="Line_18" d="M 0 0 L 0 4">
+					</path>
+				</svg>
+				<svg class="Line_19" viewBox="0 0 2 4">
+					<path id="Line_19" d="M 0 0 L 0 4">
+					</path>
+				</svg>
+				<svg class="Line_20" viewBox="0 0 16 2">
+					<path id="Line_20" d="M 0 0 L 16 0">
+					</path>
+				</svg>
+				<svg class="Line_21" viewBox="0 0 4 2">
+					<path id="Line_21" d="M 0 0 L 4 0">
+					</path>
+				</svg>
+			</div>
+			<div id="ic_help">
+				<svg class="Path_384" viewBox="0 0 24 24">
+					<path id="Path_384" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="Ellipse_1">
+					<ellipse id="Ellipse_1" rx="9" ry="9" cx="9" cy="9">
+					</ellipse>
+				</svg>
+				<svg class="Line_22" viewBox="0 0 2 0.01">
+					<path id="Line_22" d="M 0 0 L 0 0.009999999776482582">
+					</path>
+				</svg>
+				<svg class="Path_385" viewBox="10 6.971 4.671 6.529">
+					<path id="Path_385" d="M 12 13.5 C 11.96217727661133 12.83311939239502 12.36987113952637 12.22157955169678 13 12 C 14.03069877624512 11.6058464050293 14.70031547546387 10.6040096282959 14.67035675048828 9.500923156738281 C 14.64039611816406 8.39783763885498 13.91738700866699 7.43382453918457 12.86681270599365 7.096199035644531 C 11.81623935699463 6.758573055267334 10.66698265075684 7.120891571044922 10 7.999999523162842">
+					</path>
+				</svg>
+			</div>
+			<div id="ic_setting">
+				<svg class="Path_386" viewBox="0 0 24 24">
+					<path id="Path_386" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="Path_387" viewBox="3 3 18 18">
+					<path id="Path_387" d="M 10.32499980926514 4.316999912261963 C 10.75099945068359 2.560999870300293 13.24899959564209 2.560999870300293 13.67499923706055 4.316999912261963 C 13.80464172363281 4.852059364318848 14.18203258514404 5.29302453994751 14.69065093994141 5.503746032714844 C 15.19926834106445 5.714468002319336 15.77794075012207 5.669601440429688 16.24799919128418 5.382999897003174 C 17.7909984588623 4.442999839782715 19.55799865722656 6.208999633789062 18.61800003051758 7.752999782562256 C 18.33181190490723 8.222854614257812 18.28705406188965 8.801081657409668 18.49752807617188 9.309380531311035 C 18.7080020904541 9.817678451538086 19.14842987060547 10.19500255584717 19.6830005645752 10.32500076293945 C 21.43900108337402 10.75099945068359 21.43900108337402 13.24899959564209 19.6830005645752 13.67499923706055 C 19.14794158935547 13.8046407699585 18.70697593688965 14.18203163146973 18.49625396728516 14.69064998626709 C 18.28553199768066 15.19926834106445 18.33039855957031 15.77793979644775 18.61700057983398 16.24799919128418 C 19.5570011138916 17.7909984588623 17.79100036621094 19.55799865722656 16.24700164794922 18.61800003051758 C 15.77714729309082 18.33181190490723 15.19892024993896 18.28705406188965 14.69062232971191 18.49752807617188 C 14.18232440948486 18.7080020904541 13.80500030517578 19.14842987060547 13.6750020980835 19.6830005645752 C 13.24900150299072 21.43900108337402 10.75100135803223 21.43900108337402 10.32500076293945 19.6830005645752 C 10.19535827636719 19.14794158935547 9.817968368530273 18.70697593688965 9.30935001373291 18.49625396728516 C 8.800731658935547 18.28553199768066 8.222060203552246 18.33039855957031 7.75200080871582 18.61700057983398 C 6.209000587463379 19.5570011138916 4.442000865936279 17.79100036621094 5.382000923156738 16.24700164794922 C 5.66818904876709 15.77714824676514 5.71294641494751 15.19892024993896 5.5024733543396 14.69062232971191 C 5.291999816894531 14.18232440948486 4.851572036743164 13.80500030517578 4.317000865936279 13.6750020980835 C 2.561000823974609 13.24900150299072 2.561000823974609 10.75100135803223 4.317000865936279 10.32500076293945 C 4.852060794830322 10.1953592300415 5.293025970458984 9.817968368530273 5.503747463226318 9.30935001373291 C 5.714468955993652 8.800731658935547 5.669602394104004 8.222060203552246 5.383000373840332 7.75200080871582 C 4.443000793457031 6.209000587463379 6.209000587463379 4.442000865936279 7.753000736236572 5.382000923156738 C 8.749000549316406 5.99000072479248 10.04900074005127 5.452001094818115 10.32500076293945 4.317000865936279 Z">
+					</path>
+				</svg>
+				<svg class="Ellipse_2">
+					<ellipse id="Ellipse_2" rx="3" ry="3" cx="3" cy="3">
+					</ellipse>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div id="Group_434">
+		<div id="Sidebar__Menu_item_kh" class="Sidebar___Menu_item">
+			<svg class="Frame_ki">
+				<rect id="Frame_ki" rx="0" ry="0" x="0" y="0" width="230" height="52">
+				</rect>
+			</svg>
+			<svg class="Frame_kj">
+				<rect id="Frame_kj" rx="10" ry="10" x="0" y="0" width="230" height="52">
+				</rect>
+			</svg>
+			<div id="Name_kk">
+				<span>Methode Alt</span>
+			</div>
+			<svg class="Line_kl">
+				<rect id="Line_kl" rx="2" ry="2" x="0" y="0" width="4" height="52">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	<div id="Icons__Navigation_icon_12_stat_km" class="Icons___Navigation_icon__12_states_">
+		<div id="ic_invoice_kn">
+			<svg class="Path_378_ko" viewBox="0 0 24 24">
+				<path id="Path_378_ko" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+				</path>
+			</svg>
+			<svg class="Path_379_kp" viewBox="14 3 5 5">
+				<path id="Path_379_kp" d="M 14 3 L 14 7 C 14 7.552284717559814 14.44771480560303 8 15 8 L 19 8">
+				</path>
+			</svg>
+			<svg class="Path_380_kq" viewBox="5 3 14 18">
+				<path id="Path_380_kq" d="M 17 21 L 7 21 C 5.895430564880371 21 5 20.10457038879395 5 19 L 5 5 C 5 3.895430564880371 5.895430564880371 2.999999761581421 7.000000476837158 3 L 14 3 L 19 8 L 19 19 C 19 20.10457038879395 18.10456848144531 21 17 21 Z">
+				</path>
+			</svg>
+			<svg class="Line_12_kr" viewBox="0 0 1 2">
+				<path id="Line_12_kr" d="M 0 0 L 1 0">
+				</path>
+			</svg>
+			<svg class="Line_13_ks" viewBox="0 0 6 2">
+				<path id="Line_13_ks" d="M 0 0 L 6 0">
+				</path>
+			</svg>
+			<svg class="Line_14_kt" viewBox="0 0 2 2">
+				<path id="Line_14_kt" d="M 0 0 L 2 0">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<div id="Primary_Button_ku" class="Primary_Button">
+		<div id="Mina_kv" class="Mina">
+			<svg class="Rectangle_1_kw">
+				<rect id="Rectangle_1_kw" rx="38" ry="38" x="0" y="0" width="170" height="91">
+				</rect>
+			</svg>
+		</div>
+		<div id="Enregistrer">
+			<span>Enregistrer</span>
+		</div>
+	</div>
+	<div id="Group_43">
+		<div id="Group_42">
+			<svg class="Ellipse_35">
+				<ellipse id="Ellipse_35" rx="40.5" ry="38.5" cx="40.5" cy="38.5">
+				</ellipse>
+			</svg>
+			<div id="user">
+				<svg class="Path_60" viewBox="4 15 39.247 13.82">
+					<path id="Path_60" d="M 43.2474365234375 28.82009506225586 L 43.2474365234375 24.21339416503906 C 43.2474365234375 19.12498092651367 38.85451889038086 14.99999904632568 33.43557739257812 14.99999904632568 L 13.81185913085938 14.99999904632568 C 8.392919540405273 14.99999904632568 3.999998569488525 19.12498092651367 3.999999523162842 24.21339416503906 L 3.999999523162842 28.82009506225586">
+					</path>
+				</svg>
+				<svg class="Ellipse_34">
+					<ellipse id="Ellipse_34" rx="9.7137451171875" ry="9.121260643005371" cx="9.7137451171875" cy="9.121260643005371">
+					</ellipse>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div id="Sales_Breakdown_by_Product">
+		<svg class="Bg_" viewBox="0 0 335 312.278">
+			<path id="Bg_" d="M 64.381103515625 1.002949048256596e-07 L 270.6188659667969 1.002949048256596e-07 C 306.1755981445312 1.002949048256596e-07 335 25.14852714538574 335 56.17081069946289 L 335 256.1076354980469 C 335 287.1299438476562 306.1755981445312 312.2784423828125 270.6188659667969 312.2784423828125 L 64.381103515625 312.2784423828125 C 28.82439994812012 312.2784423828125 0 287.1299438476562 0 256.1076354980469 L 0 56.17081069946289 C 0 25.14852714538574 28.82439994812012 1.002949048256596e-07 64.381103515625 1.002949048256596e-07 Z">
+			</path>
+		</svg>
+		<svg class="Line_k">
+			<rect id="Line_k" rx="0" ry="0" x="0" y="0" width="184" height="1">
+			</rect>
+		</svg>
+		<div id="Breakdown_by_Products">
+			<div id="Item_">
+				<div id="n_-18_years">
+					<span>Accessories</span>
+				</div>
+				<svg class="Rectangle">
+					<rect id="Rectangle" rx="2" ry="2" x="0" y="0" width="12" height="12">
+					</rect>
+				</svg>
+				<div id="n_0">
+					<span>10%</span>
+				</div>
+			</div>
+			<div id="Item__lc">
+				<div id="n_-18_years_ld">
+					<span>Ressources</span>
+				</div>
+				<svg class="Rectangle_le">
+					<rect id="Rectangle_le" rx="2" ry="2" x="0" y="0" width="12" height="12">
+					</rect>
+				</svg>
+				<div id="n_0_lf">
+					<span>15%</span>
+				</div>
+			</div>
+			<div id="Item__lg">
+				<div id="n_-18_years_lh">
+					<span>Meubles</span>
+				</div>
+				<svg class="Rectangle_li">
+					<rect id="Rectangle_li" rx="2" ry="2" x="0" y="0" width="12" height="12">
+					</rect>
+				</svg>
+				<div id="n_0_lj">
+					<span>25%</span>
+				</div>
+			</div>
+			<div id="Item__lk">
+				<div id="n_-18_years_ll">
+					<span>Electronics</span>
+				</div>
+				<svg class="Rectangle_lm">
+					<rect id="Rectangle_lm" rx="2" ry="2" x="0" y="0" width="12" height="12">
+					</rect>
+				</svg>
+				<div id="n_0_ln">
+					<span>50%</span>
+				</div>
+			</div>
+		</div>
+		<div id="Item__lo">
+			<div id="Diagram">
+				<svg class="Circle" viewBox="0 0 163.606 163.718">
+					<path id="Circle" d="M 81.80276489257812 0 C 111.0245208740234 0 138.0285186767578 15.59866905212402 152.6439514160156 40.9294548034668 C 167.2593841552734 66.26023864746094 167.2593841552734 97.45757293701172 152.6439514160156 122.7883682250977 C 138.0285186767578 148.1191558837891 111.0245208740234 163.7178192138672 81.80276489257812 163.7178192138672 C 52.58099746704102 163.7178192138672 25.57699584960938 148.1191558837891 10.96157073974609 122.7883682250977 C -3.653856515884399 97.45757293701172 -3.653856515884399 66.26023864746094 10.96157073974609 40.9294548034668 C 25.57699584960938 15.59866905212402 52.58099746704102 0 81.80276489257812 0 L 81.80276489257812 10.91452026367188 C 56.47117233276367 10.91452026367188 33.06649398803711 24.43943214416504 20.40524482727051 46.38671493530273 C 7.743995189666748 68.33399200439453 7.743995189666748 95.38381195068359 20.40524482727051 117.3311004638672 C 33.06649398803711 139.2783813476562 56.47117233276367 152.8032989501953 81.80276489257812 152.8032989501953 C 107.1343460083008 152.8032989501953 130.5390167236328 139.2783813476562 143.2002868652344 117.3311004638672 C 155.8615112304688 95.38381195068359 155.8615112304688 68.33399200439453 143.2002868652344 46.38671493530273 C 130.5390167236328 24.43943214416504 107.1343460083008 10.91452026367188 81.80276489257812 10.91452026367188 L 81.80276489257812 0 Z">
+					</path>
+				</svg>
+				<svg class="Segment" viewBox="0 0 41.763 20.945">
+					<path id="Segment" d="M 0 0 C 14.82464981079102 0 29.32535743713379 4.296505451202393 41.76305770874023 12.3609790802002 L 36.19635772705078 20.94546699523926 C 25.42099189758301 13.95511913299561 12.84689331054688 10.22977542877197 0 10.22977542877197 L 0 0 Z">
+					</path>
+				</svg>
+				<svg class="Segment_ls" viewBox="0 0 40.529 106.893">
+					<path id="Segment_ls" d="M 5.566702842712402 0 C 28.5581226348877 14.91842269897461 41.84830856323242 40.97025299072266 40.42466354370117 68.34342193603516 C 39.70858383178711 82.10247039794922 35.30125427246094 95.42676544189453 27.66301918029785 106.8926239013672 L 19.14673042297363 101.2236328125 C 32.31756591796875 81.45458984375 33.92875671386719 56.15295028686523 23.39208793640137 34.86648559570312 C 18.09817886352539 24.1593189239502 10.01665496826172 15.08891868591309 0 8.58448600769043 L 5.566702842712402 0 Z">
+					</path>
+				</svg>
+				<svg class="Segment_lt" viewBox="0 0 150.741 155.06">
+					<path id="Segment_lt" d="M 150.7407684326172 118.4377059936523 C 134.4517822265625 142.8683929443359 106.3436889648438 156.7635955810547 77.01072692871094 154.8920288085938 C 47.67776107788086 153.0204772949219 21.57151412963867 135.6560516357422 8.536672592163086 109.3446731567383 C -4.498168468475342 83.03330230712891 -2.496324062347412 51.77370071411133 13.79265785217285 27.343017578125 C 21.4892463684082 15.80325889587402 31.99207496643066 6.399817943572998 44.30479049682617 0 L 49.36882019042969 9.713846206665039 C 26.77265548706055 21.4544506072998 12.1564474105835 44.34224700927734 11.04126453399658 69.75892639160156 C 9.926080703735352 95.17560577392578 22.45817565917969 119.2593765258789 43.93915557861328 132.9354400634766 C 65.42014312744141 146.6115112304688 92.56843566894531 147.8074645996094 115.1646041870117 136.0668792724609 C 125.8410949707031 130.5252380371094 134.9362487792969 122.3725433349609 141.6090545654297 112.3665618896484 L 150.7407684326172 118.4377059936523 Z">
+					</path>
+				</svg>
+				<svg class="Segment_lu" viewBox="0 0 35.404 17.732">
+					<path id="Segment_lu" d="M 0 8.661210060119629 C 10.93733501434326 2.975159645080566 23.07666778564453 -2.109602981192893e-08 35.40354919433594 -2.109602981192893e-08 L 35.40354919433594 10.22977542877197 C 24.72195816040039 10.22977542877197 14.20233821868896 12.80426979064941 4.7227463722229 17.73161125183105 L 0 8.661210060119629 Z">
+					</path>
+				</svg>
+			</div>
+		</div>
+		<div id="New_Customers">
+			<span>Depenses par type de Produit</span>
+		</div>
+	</div>
+	<div id="Group_436">
+		<div id="Group_423">
+			<div id="Group_36">
+				<div id="List_Item" class="List_Item">
+					<svg class="Rectangle_1538">
+						<rect id="Rectangle_1538" rx="8" ry="8" x="0" y="0" width="245" height="61">
+						</rect>
+					</svg>
+					<div id="Tous">
+						<span>Tous</span>
+					</div>
+				</div>
+			</div>
+			<div id="List_Item_l" class="List_Item">
+				<svg class="Path_370" viewBox="0 0 245 63">
+					<path id="Path_370" d="M 0 0 L 245 0 L 245 62.99999618530273 L 0 62.99999618530273 L 0 0 Z">
+					</path>
+				</svg>
+				<div id="Branche_">
+					<span>Branche</span>
+				</div>
+			</div>
+			<div id="List_Item_ma" class="List_Item">
+				<svg class="Rectangle_1538_l">
+					<rect id="Rectangle_1538_l" rx="0" ry="0" x="0" y="0" width="248" height="61">
+					</rect>
+				</svg>
+				<div id="Secteur">
+					<span>Secteur</span>
+				</div>
+			</div>
+			<div id="List_Item_mb" class="List_Item">
+				<svg class="Rectangle_1538_ma">
+					<rect id="Rectangle_1538_ma" rx="0" ry="0" x="0" y="0" width="245" height="61">
+					</rect>
+				</svg>
+				<div id="Operation">
+					<span>Operation</span>
+				</div>
+			</div>
+			<div id="Colour">
+				<div id="n_65EFF">
+					<span>#0058FF</span>
+				</div>
+				<div id="RGB_10294225">
+					<span>RGB (0,88,255)</span>
+				</div>
+				<svg class="Base_me">
+					<rect id="Base_me" rx="8" ry="8" x="0" y="0" width="225" height="73">
+					</rect>
+				</svg>
+			</div>
+			<div id="Cart" class="Cart">
+				<img id="Cart_mg" src="Cart_mg.png" srcset="Cart_mg.png 1x, Cart_mg@2x.png 2x">
+					
+				</svg>
+			</div>
+			<svg class="Rectangle_1550">
+				<rect id="Rectangle_1550" rx="46" ry="46" x="0" y="0" width="414" height="746">
+				</rect>
+			</svg>
+			<div id="Country_Sales_Data">
+				<div id="Country">
+					<div id="France">
+						<svg class="Line_ml">
+							<rect id="Line_ml" rx="0" ry="0" x="0" y="0" width="380" height="1">
+							</rect>
+						</svg>
+						<div id="Name_mm">
+							<span>Adm</span>
+						</div>
+						<div id="Text_mn">
+							<span>5%</span>
+						</div>
+						<div id="Text_mo">
+							<span>382</span>
+						</div>
+					</div>
+					<div id="Australia">
+						<svg class="Line_mq">
+							<rect id="Line_mq" rx="0" ry="0" x="0" y="0" width="380" height="1">
+							</rect>
+						</svg>
+						<div id="Name_mr">
+							<span>Industrie</span>
+						</div>
+						<div id="Text_ms">
+							<span>5%</span>
+						</div>
+						<div id="Text_mt">
+							<span>382</span>
+						</div>
+					</div>
+					<div id="China">
+						<svg class="Line_mv">
+							<rect id="Line_mv" rx="0" ry="0" x="0" y="0" width="380" height="1">
+							</rect>
+						</svg>
+						<div id="Name_mw">
+							<span>Commerce</span>
+						</div>
+						<div id="Text_mx">
+							<span>10%</span>
+						</div>
+						<div id="Text_my">
+							<span>765</span>
+						</div>
+					</div>
+					<div id="Russia">
+						<svg class="Line_m">
+							<rect id="Line_m" rx="0" ry="0" x="0" y="0" width="380" height="1">
+							</rect>
+						</svg>
+						<div id="Name_m">
+							<span>Santé</span>
+						</div>
+						<div id="Text_m">
+							<span>15%</span>
+						</div>
+						<div id="Text_na">
+							<span>1147</span>
+						</div>
+					</div>
+					<div id="Canada">
+						<svg class="Line_na">
+							<rect id="Line_na" rx="0" ry="0" x="0" y="0" width="380" height="1">
+							</rect>
+						</svg>
+						<div id="Name_na">
+							<span>Education</span>
+						</div>
+						<div id="Text_nb">
+							<span>20%</span>
+						</div>
+						<div id="Text_nc">
+							<span>1530</span>
+						</div>
+					</div>
+					<div id="United_States">
+						<svg class="Line_nb">
+							<rect id="Line_nb" rx="0" ry="0" x="0" y="0" width="380" height="1">
+							</rect>
+						</svg>
+						<div id="Group_422">
+							<div id="Text_nd">
+								<span>3442</span>
+							</div>
+							<div id="Text_ne">
+								<span>45%</span>
+							</div>
+							<div id="Name_ne">
+								<span>Agriculture</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Widgets__Data_Card_with_Icons" class="Widgets___Data_Card_with_Icons">
+				<svg class="Bgg">
+					<rect id="Bgg" rx="6" ry="6" x="0" y="0" width="380" height="150">
+					</rect>
+				</svg>
+				<div id="Data_nh">
+					<div id="n_7632">
+						<span>14k</span>
+					</div>
+					<div id="Sales_nj">
+						<span>Transactions Totales</span>
+					</div>
+					<div id="Widgets___Elements___Price" class="Widgets____Elements_____Price">
+						<div id="Compared_to_21340">
+							<span>de l'année passée</span>
+						</div>
+						<div id="n_price">
+							<div id="ic-arrow-narrow-up">
+								<svg class="Path_397" viewBox="0 0 16 16">
+									<path id="Path_397" d="M 0 0 L 16 0 L 16 16 L 0 16 L 0 0 Z">
+									</path>
+								</svg>
+								<svg class="Line_23" viewBox="0 0 2 10.126">
+									<path id="Line_23" d="M 0 0 L 0 10.1259765625">
+									</path>
+								</svg>
+								<svg class="Line_24" viewBox="0 0 3 3">
+									<path id="Line_24" d="M 3 3 L 0 0">
+									</path>
+								</svg>
+								<svg class="Line_25" viewBox="0 0 3 3">
+									<path id="Line_25" d="M 0 3 L 3 0">
+									</path>
+								</svg>
+							</div>
+							<div id="n_5">
+								<span>2.3%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="Icons__Widget_Illustration" class="Icons___Widget_Illustration">
+					<div id="ic-users">
+						<svg class="Oval">
+							<ellipse id="Oval" rx="31" ry="31" cx="31" cy="31">
+							</ellipse>
+						</svg>
+						<div id="users">
+							<svg class="Path_450" viewBox="0 0 24 24">
+								<path id="Path_450" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+								</path>
+							</svg>
+							<svg class="Ellipse_11">
+								<ellipse id="Ellipse_11" rx="4" ry="4" cx="4" cy="4">
+								</ellipse>
+							</svg>
+							<svg class="Path_451" viewBox="3 15 12 6">
+								<path id="Path_451" d="M 3 21 L 3 19 C 3 16.79086112976074 4.7908616065979 15 7.000000476837158 15 L 11 15 C 13.20913887023926 15 15 16.79086112976074 15 19 L 15 21">
+								</path>
+							</svg>
+							<svg class="Path_452" viewBox="16 3.13 3.008 7.75">
+								<path id="Path_452" d="M 16 3.130000114440918 C 17.7699146270752 3.583170413970947 19.00784301757812 5.17799186706543 19.00784301757812 7.005000591278076 C 19.00784301757812 8.832008361816406 17.7699146270752 10.42683029174805 16 10.88000011444092">
+								</path>
+							</svg>
+							<svg class="Path_453" viewBox="18 15.15 3 5.85">
+								<path id="Path_453" d="M 21 21 L 21 19 C 20.98956108093262 17.1845703125 19.7578182220459 15.60383415222168 18 15.14999961853027">
+								</path>
+							</svg>
+						</div>
+					</div>
+					<div id="ic-revenues">
+						<svg class="Oval_n">
+							<ellipse id="Oval_n" rx="31" ry="31" cx="31" cy="31">
+							</ellipse>
+						</svg>
+						<svg class="usd-circle" viewBox="1 1 24 24">
+							<path id="usd-circle" d="M 11.90909004211426 9.727272987365723 L 16.27272605895996 9.727272987365723 C 16.87521934509277 9.727272987365723 17.3636360168457 9.238855361938477 17.3636360168457 8.63636302947998 C 17.3636360168457 8.033870697021484 16.87521934509277 7.545454502105713 16.27272605895996 7.545454502105713 L 14.09090900421143 7.545454502105713 L 14.09090900421143 6.454545497894287 C 14.09090900421143 5.852053165435791 13.60249137878418 5.363636493682861 13 5.363636493682861 C 12.39750671386719 5.363636493682861 11.90909004211426 5.852053165435791 11.90909004211426 6.454545497894287 L 11.90909004211426 7.545454502105713 C 10.10161304473877 7.545454502105713 8.63636302947998 9.010704040527344 8.63636302947998 10.81818199157715 C 8.63636302947998 12.62565898895264 10.10161304473877 14.09090900421143 11.90909004211426 14.09090900421143 L 14.09090900421143 14.09090900421143 C 14.69340229034424 14.09090900421143 15.18181800842285 14.57932662963867 15.18181800842285 15.18181800842285 C 15.18181800842285 15.78431129455566 14.69340133666992 16.27272605895996 14.09090900421143 16.27272605895996 L 9.727272987365723 16.27272605895996 C 9.124778747558594 16.27272605895996 8.63636302947998 16.76114273071289 8.63636302947998 17.3636360168457 C 8.63636302947998 17.96612930297852 9.12477970123291 18.45454597473145 9.727272987365723 18.45454597473145 L 11.90909004211426 18.45454597473145 L 11.90909004211426 19.54545593261719 C 11.90909004211426 20.14794731140137 12.39750671386719 20.6363639831543 13 20.6363639831543 C 13.60249137878418 20.6363639831543 14.09090900421143 20.14794731140137 14.09090900421143 19.54545593261719 L 14.09090900421143 18.45454597473145 C 15.89838695526123 18.45454597473145 17.3636360168457 16.98929595947266 17.3636360168457 15.18181896209717 C 17.3636360168457 13.37434196472168 15.89838695526123 11.90909194946289 14.09090900421143 11.90909194946289 L 11.90909004211426 11.90909004211426 C 11.30659770965576 11.90909004211426 10.81818199157715 11.42067337036133 10.81818199157715 10.81818199157715 C 10.81818199157715 10.21568870544434 11.30659866333008 9.727272987365723 11.90909004211426 9.727272987365723 Z M 13 0.9999998807907104 C 6.372585296630859 0.9999998807907104 1.000002861022949 6.372583389282227 1.000002861022949 13.00000095367432 C 1.000002861022949 19.62741661071777 6.372585773468018 25 13.00000381469727 25 C 19.62741851806641 25 25.00000381469727 19.62741661071777 25.00000381469727 12.99999904632568 C 25.00000381469727 6.372581005096436 19.62741851806641 0.9999988079071045 13.00000095367432 0.9999998807907104 Z M 13 22.81818199157715 C 7.577566146850586 22.81818199157715 3.18181586265564 18.42243003845215 3.181817054748535 12.99999713897705 C 3.181817054748535 7.577566623687744 7.577567577362061 3.181816101074219 13.00000095367432 3.181817293167114 C 18.42243194580078 3.181817293167114 22.81818199157715 7.577568054199219 22.81818199157715 13.00000095367432 C 22.81818199157715 18.42243194580078 18.42243385314941 22.81817817687988 13.00000190734863 22.81818199157715 Z">
+							</path>
+						</svg>
+					</div>
+					<div id="ic-bounce_rate">
+						<svg class="Oval_oa">
+							<ellipse id="Oval_oa" rx="31" ry="31" cx="31" cy="31">
+							</ellipse>
+						</svg>
+						<div id="chart-bar">
+							<svg class="Path_449" viewBox="0 0 24 24">
+								<path id="Path_449" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+								</path>
+							</svg>
+							<div id="percent">
+								<svg class="Line_34" viewBox="0 0 14 14">
+									<path id="Line_34" d="M 14 0 L 0 14">
+									</path>
+								</svg>
+								<svg class="Ellipse_9">
+									<ellipse id="Ellipse_9" rx="2.5" ry="2.5" cx="2.5" cy="2.5">
+									</ellipse>
+								</svg>
+								<svg class="Ellipse_10">
+									<ellipse id="Ellipse_10" rx="2.5" ry="2.5" cx="2.5" cy="2.5">
+									</ellipse>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div id="ic-sessions">
+						<svg class="Oval_oe">
+							<ellipse id="Oval_oe" rx="31" ry="31" cx="31" cy="31">
+							</ellipse>
+						</svg>
+						<div id="refresh">
+							<svg class="Path_446" viewBox="0 0 24 24">
+								<path id="Path_446" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+								</path>
+							</svg>
+							<svg class="Path_447" viewBox="4 4 16 7">
+								<path id="Path_447" d="M 20 11 C 19.49727630615234 7.382537364959717 16.63586807250977 4.548933506011963 13.01367092132568 4.081552505493164 C 9.391473770141602 3.61417293548584 5.904510021209717 5.628632545471191 4.500000953674316 9 M 4 4 L 4 9 L 9 9">
+								</path>
+							</svg>
+							<svg class="Path_448" viewBox="4 13 16 7">
+								<path id="Path_448" d="M 4 13 C 4.502723693847656 16.61746215820312 7.364130973815918 19.4510669708252 10.98633003234863 19.91844749450684 C 14.60852813720703 20.38582611083984 18.09549331665039 18.37136840820312 19.5 14.99999904632568 M 20 20 L 20 15 L 15 15">
+								</path>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Widgets__Data_Card_with_Icons_oj" class="Widgets___Data_Card_with_Icons">
+				<svg class="Bgg_ok">
+					<rect id="Bgg_ok" rx="55" ry="55" x="0" y="0" width="382" height="150">
+					</rect>
+				</svg>
+				<div id="Data_ol">
+					<div id="n_7632_om">
+						<span>26%</span>
+					</div>
+					<div id="Sales_on">
+						<span>Taux d'investissement </span>
+					</div>
+					<div id="Widgets___Elements___Price_oo" class="Widgets____Elements_____Price">
+						<div id="n_price_op">
+							<div id="ic-arrow-narrow-up_oq">
+								<svg class="Path_397_or" viewBox="0 0 16 16">
+									<path id="Path_397_or" d="M 0 0 L 16 0 L 16 16 L 0 16 L 0 0 Z">
+									</path>
+								</svg>
+								<svg class="Line_23_os" viewBox="0 0 2 10.126">
+									<path id="Line_23_os" d="M 0 0 L 0 10.1259765625">
+									</path>
+								</svg>
+								<svg class="Line_24_ot" viewBox="0 0 3 3">
+									<path id="Line_24_ot" d="M 3 3 L 0 0">
+									</path>
+								</svg>
+								<svg class="Line_25_ou" viewBox="0 0 3 3">
+									<path id="Line_25_ou" d="M 0 3 L 3 0">
+									</path>
+								</svg>
+							</div>
+							<div id="n_5_ov">
+								<span>2.1%</span>
+							</div>
+						</div>
+					</div>
+					<div id="Compared_to_21340_ow">
+						<span>de l'année passée</span>
+					</div>
+				</div>
+				<div id="Icons__Widget_Illustration_ox" class="Icons___Widget_Illustration">
+					<div id="ic-users_oy">
+						<svg class="Oval_oz">
+							<ellipse id="Oval_oz" rx="31" ry="31" cx="31" cy="31">
+							</ellipse>
+						</svg>
+						<div id="users_o">
+							<svg class="Path_450_o" viewBox="0 0 24 24">
+								<path id="Path_450_o" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+								</path>
+							</svg>
+							<svg class="Ellipse_11_o">
+								<ellipse id="Ellipse_11_o" rx="4" ry="4" cx="4" cy="4">
+								</ellipse>
+							</svg>
+							<svg class="Path_451_o" viewBox="3 15 12 6">
+								<path id="Path_451_o" d="M 3 21 L 3 19 C 3 16.79086112976074 4.7908616065979 15 7.000000476837158 15 L 11 15 C 13.20913887023926 15 15 16.79086112976074 15 19 L 15 21">
+								</path>
+							</svg>
+							<svg class="Path_452_o" viewBox="16 3.13 3.008 7.75">
+								<path id="Path_452_o" d="M 16 3.130000114440918 C 17.7699146270752 3.583170413970947 19.00784301757812 5.17799186706543 19.00784301757812 7.005000591278076 C 19.00784301757812 8.832008361816406 17.7699146270752 10.42683029174805 16 10.88000011444092">
+								</path>
+							</svg>
+							<svg class="Path_453_o" viewBox="18 15.15 3 5.85">
+								<path id="Path_453_o" d="M 21 21 L 21 19 C 20.98956108093262 17.1845703125 19.7578182220459 15.60383415222168 18 15.14999961853027">
+								</path>
+							</svg>
+						</div>
+					</div>
+					<div id="ic-revenues_o">
+						<svg class="Oval_o">
+							<ellipse id="Oval_o" rx="31" ry="31" cx="31" cy="31">
+							</ellipse>
+						</svg>
+						<svg class="usd-circle_o" viewBox="1 1 24 24">
+							<path id="usd-circle_o" d="M 11.90909004211426 9.727272987365723 L 16.27272605895996 9.727272987365723 C 16.87521934509277 9.727272987365723 17.3636360168457 9.238855361938477 17.3636360168457 8.63636302947998 C 17.3636360168457 8.033870697021484 16.87521934509277 7.545454502105713 16.27272605895996 7.545454502105713 L 14.09090900421143 7.545454502105713 L 14.09090900421143 6.454545497894287 C 14.09090900421143 5.852053165435791 13.60249137878418 5.363636493682861 13 5.363636493682861 C 12.39750671386719 5.363636493682861 11.90909004211426 5.852053165435791 11.90909004211426 6.454545497894287 L 11.90909004211426 7.545454502105713 C 10.10161304473877 7.545454502105713 8.63636302947998 9.010704040527344 8.63636302947998 10.81818199157715 C 8.63636302947998 12.62565898895264 10.10161304473877 14.09090900421143 11.90909004211426 14.09090900421143 L 14.09090900421143 14.09090900421143 C 14.69340229034424 14.09090900421143 15.18181800842285 14.57932662963867 15.18181800842285 15.18181800842285 C 15.18181800842285 15.78431129455566 14.69340133666992 16.27272605895996 14.09090900421143 16.27272605895996 L 9.727272987365723 16.27272605895996 C 9.124778747558594 16.27272605895996 8.63636302947998 16.76114273071289 8.63636302947998 17.3636360168457 C 8.63636302947998 17.96612930297852 9.12477970123291 18.45454597473145 9.727272987365723 18.45454597473145 L 11.90909004211426 18.45454597473145 L 11.90909004211426 19.54545593261719 C 11.90909004211426 20.14794731140137 12.39750671386719 20.6363639831543 13 20.6363639831543 C 13.60249137878418 20.6363639831543 14.09090900421143 20.14794731140137 14.09090900421143 19.54545593261719 L 14.09090900421143 18.45454597473145 C 15.89838695526123 18.45454597473145 17.3636360168457 16.98929595947266 17.3636360168457 15.18181896209717 C 17.3636360168457 13.37434196472168 15.89838695526123 11.90909194946289 14.09090900421143 11.90909194946289 L 11.90909004211426 11.90909004211426 C 11.30659770965576 11.90909004211426 10.81818199157715 11.42067337036133 10.81818199157715 10.81818199157715 C 10.81818199157715 10.21568870544434 11.30659866333008 9.727272987365723 11.90909004211426 9.727272987365723 Z M 13 0.9999998807907104 C 6.372585296630859 0.9999998807907104 1.000002861022949 6.372583389282227 1.000002861022949 13.00000095367432 C 1.000002861022949 19.62741661071777 6.372585773468018 25 13.00000381469727 25 C 19.62741851806641 25 25.00000381469727 19.62741661071777 25.00000381469727 12.99999904632568 C 25.00000381469727 6.372581005096436 19.62741851806641 0.9999988079071045 13.00000095367432 0.9999998807907104 Z M 13 22.81818199157715 C 7.577566146850586 22.81818199157715 3.18181586265564 18.42243003845215 3.181817054748535 12.99999713897705 C 3.181817054748535 7.577566623687744 7.577567577362061 3.181816101074219 13.00000095367432 3.181817293167114 C 18.42243194580078 3.181817293167114 22.81818199157715 7.577568054199219 22.81818199157715 13.00000095367432 C 22.81818199157715 18.42243194580078 18.42243385314941 22.81817817687988 13.00000190734863 22.81818199157715 Z">
+							</path>
+						</svg>
+					</div>
+					<div id="ic-bounce_rate_o">
+						<svg class="Oval_pa">
+							<ellipse id="Oval_pa" rx="31" ry="31" cx="31" cy="31">
+							</ellipse>
+						</svg>
+						<div id="chart-bar_pb">
+							<svg class="Path_449_pc" viewBox="0 0 24 24">
+								<path id="Path_449_pc" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+								</path>
+							</svg>
+							<div id="percent_pd">
+								<svg class="Line_34_pe" viewBox="0 0 14 14">
+									<path id="Line_34_pe" d="M 14 0 L 0 14">
+									</path>
+								</svg>
+								<svg class="Ellipse_9_pf">
+									<ellipse id="Ellipse_9_pf" rx="2.5" ry="2.5" cx="2.5" cy="2.5">
+									</ellipse>
+								</svg>
+								<svg class="Ellipse_10_pg">
+									<ellipse id="Ellipse_10_pg" rx="2.5" ry="2.5" cx="2.5" cy="2.5">
+									</ellipse>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div id="ic-sessions_ph">
+						<svg class="Oval_pi">
+							<ellipse id="Oval_pi" rx="31" ry="31" cx="31" cy="31">
+							</ellipse>
+						</svg>
+						<div id="refresh_pj">
+							<svg class="Path_446_pk" viewBox="0 0 24 24">
+								<path id="Path_446_pk" d="M 0 0 L 24 0 L 24 24 L 0 24 L 0 0 Z">
+								</path>
+							</svg>
+							<svg class="Path_447_pl" viewBox="4 4 16 7">
+								<path id="Path_447_pl" d="M 20 11 C 19.49727630615234 7.382537364959717 16.63586807250977 4.548933506011963 13.01367092132568 4.081552505493164 C 9.391473770141602 3.61417293548584 5.904510021209717 5.628632545471191 4.500000953674316 9 M 4 4 L 4 9 L 9 9">
+								</path>
+							</svg>
+							<svg class="Path_448_pm" viewBox="4 13 16 7">
+								<path id="Path_448_pm" d="M 4 13 C 4.502723693847656 16.61746215820312 7.364130973815918 19.4510669708252 10.98633003234863 19.91844749450684 C 14.60852813720703 20.38582611083984 18.09549331665039 18.37136840820312 19.5 14.99999904632568 M 20 20 L 20 15 L 15 15">
+								</path>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Group_435">
+			<svg class="Base_po">
+				<rect id="Base_po" rx="0" ry="0" x="0" y="0" width="414.111" height="55.937">
+				</rect>
+			</svg>
+			<svg class="Base_pp">
+				<rect id="Base_pp" rx="26" ry="26" x="0" y="0" width="414.111" height="54.753">
+				</rect>
+			</svg>
+			<div id="Title_pq">
+				<svg class="Line_pr">
+					<rect id="Line_pr" rx="0" ry="0" x="0" y="0" width="380" height="1">
+					</rect>
+				</svg>
+				<div id="Name_ps">
+					<span>Branche</span>
+				</div>
+				<div id="Name_pt">
+					<span>Percentage</span>
+				</div>
+				<div id="Name_pu">
+					<span>Transaction</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

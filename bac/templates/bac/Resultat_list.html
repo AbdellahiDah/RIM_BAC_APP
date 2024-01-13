@@ -1,0 +1,33 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Resultats</title>{% endblock %}
+{% block content %}
+<div class="text-end pt-5"> <a href="/Resultat/add" class="get-started-btn scrollto" style="text-decoration:none">Add Resultat</a></div>
+<h1><b>Liste des Resultats</b></h1><br>
+{% if resultat_list %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Examen</th>
+        <th scope="col">Candidat</th>
+        <th scope="col">Moyenne</th>
+        <th scope="col">Decision</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for w in resultat_list %}
+      <tr>
+        <th scope="row">{{ w.examen.code }}</th>
+        <td>{{ w.candidat.num_dossier }}</td>
+        <td>{{ w.moyenne }}</td>
+        <td>{{ w.decision }}</td>
+        <td><a href="/resultat/{{ w.examen.code }}" class="btn btn-info">View</a> | <a href="/resultat/update/{{ w.examen }}" class="btn btn-primary">Edit</a> | <a href="/resultat/delete/{{ w.examen }}" class="btn btn-danger">Delete</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <p>There are no Resultat in the database.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Resultat Details</title>{% endblock %}
+{% block content %}
+{% if found_c %}
+<br><br><br>
+    <h1 class="text-dark"><b>Resultats de recherche</b></h1>
+    <ul class="list-group p-5">
+        <li class="list-group-item"><b>Examen</b>: {{Bac}}</li>
+        <li class="list-group-item"><b>Candidat</b>: {{candidat}}</li>
+        <li class="list-group-item"><b>moyenne</b>: {{moyenne}}</li>    
+        <li class="list-group-item"><b>decision</b>: {{decision}}</li>   
+    </ul>
+    
+    <p class="text-center"><a href="/Resultat/" class="get-started-btn scrollto" style="text-decoration:none">Back To List of Resultats</a></p>
+{% else %}
+    <p>Il n'y a pas d'etudiant avec cet identifiant dans la base de donnees.</p>
+{% endif %}
+{% endblock %}

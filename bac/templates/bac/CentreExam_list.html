@@ -1,0 +1,30 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Centre Exams</title>{% endblock %}
+{% block content %}
+<div class="text-end pt-5"> <a href="/CentreExam/add" class="get-started-btn scrollto" class="get-started-btn scrollto">Add CentreExam</a></div>
+
+<h1><b>Liste des CentreExams</b></h1><br><br>
+{% if centreexam_list %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Code</th>
+        <th scope="col">Wilaya</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for w in centreexam_list %}
+      <tr>
+        <th scope="row">{{ w.code }}</th>
+        <td>{{ w.wilaya_id }}</td>
+        <td><a href="/CentreExam/{{ w.code }}" class="btn btn-info">View</a> | <a href="/CentreExam/update/{{ w.code }}" class="btn btn-primary">Edit</a> | <a href="/CentreExam/delete/{{ w.code }}" class="btn btn-danger">Delete</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <p>There are no CentreExam in the database.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Centre Exams Edit</title>{% endblock %}
+{% block content %}
+<h1 class="text-dark"> <b>Add a Centre Exams</b></h1>
+<form action="" method="post" class="text-center p-5">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit" class="btn btn-primary" value="Save" />
+</form>
+<p class="text-center"><a href="/CentreExam/" class="get-started-btn scrollto" style="text-decoration:none">Back To List of Centre Exams</a></p>
+{% endblock %}

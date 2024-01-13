@@ -1,0 +1,31 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Exam</title>{% endblock %}
+{% block content %}
+<div class="text-end pt-5"> <a href="/Exam/add" class="get-started-btn scrollto" style="text-decoration:none">Add Exam</a></div>
+<h1><b>Liste des Exams</b></h1><br><br>
+{% if exam_list %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">code</th>
+        <th scope="col">serie</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for w in exam_list %}
+      <tr>
+        <th scope="row">{{ w.id }}</th>
+        <td>{{ w.code }}</td>
+        <td>{{ w.serie }}</td>
+        <td><a href="/Exam/{{ w.id }}" class="btn btn-info">View</a> | <a href="/Exam/update/{{ w.id }}" class="btn btn-primary">Edit</a> | <a href="/Exam/delete/{{ w.id }}" class="btn btn-danger">Delete</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <p>There are no Wilaays in the database.</p>
+{% endif %}
+{% endblock %}

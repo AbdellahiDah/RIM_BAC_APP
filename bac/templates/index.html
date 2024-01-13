@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+
+{% block title %}<title>Homme</title>{% endblock %}
+{% block content %}
+<br><br>
+
+    <h1 class="text-dark"> <b>Bienvenu dans RimBac</b></h1><br><br><br>
+    <div class="row text-center">
+        <div class="col">
+            <p><a href="/wilaya/" class="get-started-btn scrollto" style="width: 50%;text-decoration:none">Gestion des Wilayas</a></p>
+            <p><a href="/etablissement/" class="get-started-btn scrollto" style="width: 50%;text-decoration:none">Gestion des Etablissements</a></p>
+            <p><a href="/CentreExam/" class="get-started-btn scrollto" style="width: 50%;text-decoration:none">Gestion des CentreExams</a></p>
+        </div>   
+        <div class="col">
+            <p><a href="/Exam/" class="get-started-btn scrollto" style="width: 50%;text-decoration:none"> Gestion des Exam</a></p>
+            <p><a href="/Candidat/" class="get-started-btn scrollto" style="width: 50%;text-decoration:none">Gestion des Candidats</a></p>
+            <p><a href="/Resultat/" class="get-started-btn scrollto" style="width: 50%;text-decoration:none">Gestion des Resultats</a></p>
+        </div>
+        
+        
+    </div>
+{% endblock %}

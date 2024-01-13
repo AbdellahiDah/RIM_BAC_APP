@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>CentreExam Details</title>{% endblock %}
+{% block content %}
+    <h1 class="text-center">Information de la CentreExam</h1>
+    <ul class="list-group p-5">
+        <li class="list-group-item"><b>Code</b>: {{ centreexam.code }}</li>
+        <li class="list-group-item"><b>wilaya</b>: {{ centrecxam.nom }}</li>
+    </ul>
+    <p class="text-center"><a href="/CentreExam/" class="get-started-btn scrollto">Back To List of CentreExam</a></p>
+{% endblock %}

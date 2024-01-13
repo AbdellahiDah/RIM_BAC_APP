@@ -1,0 +1,27 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+    <br>
+    <title>Candidat Details</title>
+    <br>
+{% endblock %}
+{% block content %}
+    <br><br>
+    <h1><b>Information de la Candidat</b></h1><br>
+    <ul class="list-group">
+        <li class="list-group-item"><b>id</b>: {{ candidat.id }}</li>
+        <li class="list-group-item"><b>num_dossier</b>: {{ candidat.num_dossier }}</li>
+        <li class="list-group-item"><b>annee</b>: {{ candidat.annee }}</li>
+        <li class="list-group-item"><b>nom</b>: {{ Candidat.nom }}</li>
+        <li class="list-group-item"><b>prenom</b>: {{ candidat.prenom }}</li>
+        <li class="list-group-item"><b>date_naissance</b>: {{ candidat.date_naissance }}</li>
+        <li class="list-group-item"><b>nni</b>: {{ candidat.nni }}</li>
+        <li class="list-group-item"><b>aptitude</b>: {{ candidat.aptitude }}</li>
+        <li class="list-group-item"><b>type_candidature</b>: {{ candidat.type_candidature }}</li>
+        <li class="list-group-item"><b>etablissement</b>: {{ candidat.etablissement.code }}</li>
+        <li class="list-group-item"><b>centre_exam</b>: {{ candidat.centre_exam }}</li>
+        <li class="list-group-item"><b>sexe</b>: {{ candidat.sexe }}</li>
+        <li class="list-group-item"><b>etablissement</b>: {{ candidat.etablissement }}</li>
+    </ul>
+    <p class="text-center"><a href="/Candidat/" class="get-started-btn scrollto" style="text-decoration: none;">Back To List of Candidat</a></p>
+{% endblock %}
